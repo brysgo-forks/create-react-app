@@ -34,18 +34,9 @@ if (url === 'get-schema') {
   url = null;
 }
 
-const saveJson = argv.json === true;
-
 if (!url) {
-  console.log(
-    'Usage: get-schema ' + chalk.yellow('[--json] ') + chalk.green('url')
-  );
+  console.log('Usage: get-schema ' + chalk.green('url'));
   console.log('  ' + chalk.green('url') + ' is your graphql server address');
-  console.log(
-    '  ' +
-      chalk.yellow('--json') +
-      ' is an optional flag that  will download your schema in json'
-  );
   process.exit();
 }
 

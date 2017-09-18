@@ -62,10 +62,10 @@ fetch(url, {
     if (saveJson) {
       const jsonString = JSON.stringify(res.data);
       console.log('schema.json has been saved');
-      fs.writeFileSync('schema.json', jsonString);
+      fs.writeFileSync('src/schema.json', jsonString);
     }
     const schemaString = printSchema(buildClientSchema(res.data));
-    fs.writeFileSync('schema.graphql', schemaString);
+    fs.writeFileSync('src/schema.graphql', schemaString);
   })
   .catch(e => {
     console.log(chalk.red('\nError:'));

@@ -1,3 +1,5 @@
+'use strict';
+
 var fetch = require('node-fetch');
 var fs = require('fs');
 
@@ -5,7 +7,9 @@ const {
   buildClientSchema,
   introspectionQuery,
   printSchema,
+  extendSchema,
 } = require('graphql/utilities');
+const { parse } = require('graphql/language');
 const chalk = require('chalk');
 
 function isURL(str) {
@@ -21,10 +25,14 @@ console.log(url);
 var argv = require('minimist')(process.argv.slice(2), { boolean: true });
 
 argv._.forEach(command => {
-  if (isURL(command)) url = command;
+  if (isURL(command)) {
+    url = command;
+  }
 });
 
-if (url === 'get-schema') url = null;
+if (url === 'get-schema') {
+  url = null;
+}
 
 const saveJson = argv.json === true;
 
@@ -58,14 +66,30 @@ fetch(url, {
 })
   .then(res => res.json())
   .then(res => {
-    console.log('schema.graphql has downloaded and saved');
-    if (saveJson) {
-      const jsonString = JSON.stringify(res.data);
-      console.log('schema.json has been saved');
-      fs.writeFileSync('src/schema.json', jsonString);
+    console.log('schemas have downloaded');
+    const builtSchema = buildClientSchema(res.data);
+
+    const clientSchemaPath = 'src/clientExtensions.graphql';
+    const clientSchemaExists = fs.existsSync(clientSchemaPath);
+    if (clientSchemaExists) {
+      console.log('client extensions found, mixing in');
+      const stringSchemaExtensions = fs.readFileSync(clientSchemaPath, {
+        encoding: 'utf8',
+      });
+      const extendedSchema = extendSchema(
+        builtSchema,
+        parse(stringSchemaExtensions)
+      );
+      const extendedSchemaString = printSchema(extendedSchema);
+      fs.writeFileSync(
+        'src/schemaWithExtensions.graphql',
+        extendedSchemaString
+      );
     }
-    const schemaString = printSchema(buildClientSchema(res.data));
+
+    const schemaString = printSchema(builtSchema);
     fs.writeFileSync('src/schema.graphql', schemaString);
+    console.log('schemas have been saved');
   })
   .catch(e => {
     console.log(chalk.red('\nError:'));

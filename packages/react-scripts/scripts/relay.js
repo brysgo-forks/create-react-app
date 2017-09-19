@@ -86,7 +86,7 @@ function remoteSchemaBuilt(builtSchema) {
   console.log('schemas have been saved');
 
   console.log('running relay-compiler...');
-  const result = spawn.sync(
+  spawn.sync(
     'relay-compiler',
     [
       '--src',

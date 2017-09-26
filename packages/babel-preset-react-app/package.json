@@ -1,8 +1,8 @@
 {
-  "name": "babel-preset-react-app",
+  "name": "brysgo-babel-preset-react-app",
   "version": "3.0.2",
   "description": "Babel preset used by Create React App",
-  "repository": "facebookincubator/create-react-app",
+  "repository": "brysgo/create-react-app",
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/facebookincubator/create-react-app/issues"

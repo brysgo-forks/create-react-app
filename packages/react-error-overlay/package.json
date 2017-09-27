@@ -4,7 +4,7 @@
   "description": "An overlay for displaying stack frames.",
   "main": "lib/index.js",
   "scripts": {
-    "prepublishOnly": "npm run build:prod",
+    "prepublishOnly": "npm run build:prod && npm test",
     "start": "rimraf lib/ && cross-env NODE_ENV=development npm run build -- --watch",
     "test": "flow && jest",
     "build": "rimraf lib/ && babel src/ -d lib/",

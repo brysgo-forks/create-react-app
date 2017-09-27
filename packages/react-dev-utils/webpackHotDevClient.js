@@ -21,7 +21,7 @@ var stripAnsi = require('strip-ansi');
 var url = require('url');
 var launchEditorEndpoint = require('./launchEditorEndpoint');
 var formatWebpackMessages = require('./formatWebpackMessages');
-var ErrorOverlay = require('react-error-overlay');
+var ErrorOverlay = require('brysgo-react-error-overlay');
 
 // We need to keep track of if there has been a runtime error.
 // Essentially, we cannot guarantee application state was not corrupted by the

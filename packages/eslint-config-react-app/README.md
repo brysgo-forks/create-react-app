@@ -26,7 +26,7 @@ Then create a file named `.eslintrc` with following contents in the root folder 
 
   ```js
   {
-    "extends": "react-app"
+    "extends": "react-app-brysgo"
   }
   ```
 
@@ -59,7 +59,7 @@ If you want to enable even more accessibility rules, you can create an `.eslintr
 
   ```json
   {
-    "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+    "extends": ["react-app-brysgo", "plugin:jsx-a11y/recommended"],
     "plugins": ["jsx-a11y"]
   }
   ```

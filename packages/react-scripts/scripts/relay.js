@@ -1,6 +1,6 @@
 'use strict';
 try {
-  const spawn = require('react-dev-utils/crossSpawn');
+  const spawn = require('brysgo-react-dev-utils/crossSpawn');
   var fetch = require('node-fetch');
   var fs = require('fs');
 

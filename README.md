@@ -167,11 +167,12 @@ Please refer to the [User Guide](https://github.com/facebookincubator/create-rea
 * Language extras beyond ES6 like the object spread operator.
 * A dev server that lints for common errors.
 * Import CSS and image files directly from JavaScript.
+* CSS modules used in all files that are not named `.global.css` or in `node_modules` folder.
 * Autoprefixed CSS, so you don’t need `-webkit` or other prefixes.
 * A `build` script to bundle JS, CSS, and images for production, with sourcemaps.
 * An offline-first [service worker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers) and a [web app manifest](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/), meeting all the [Progressive Web App](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#making-a-progressive-web-app) criteria.
 
-**The feature set is intentionally limited**. It doesn’t support advanced features such as server rendering or CSS modules. The tool is also **non-configurable** because it is hard to provide a cohesive experience and easy updates across a set of tools when the user can tweak anything.
+**The feature set is intentionally limited**. It doesn’t support advanced features such as server rendering or ~~CSS modules~~. The tool is also **non-configurable** because it is hard to provide a cohesive experience and easy updates across a set of tools when the user can tweak anything.
 
 **You don’t have to use this.** Historically it has been easy to [gradually adopt](https://www.youtube.com/watch?v=BF58ZJ1ZQxY) React. However many people create new single-page React apps from scratch every day. We’ve heard [loud](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4) and [clear](https://twitter.com/thomasfuchs/status/708675139253174273) that this process can be error-prone and tedious, especially if this is your first JavaScript build stack. This project is an attempt to figure out a good way to start developing React apps.
 

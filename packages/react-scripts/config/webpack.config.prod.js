@@ -198,7 +198,7 @@ module.exports = {
           // in the main CSS file.
           {
             test: /\.css$/,
-            exclude: /node_modules/,
+            exclude: [/node_modules/, /\.global\.css$/],
             loader: ExtractTextPlugin.extract(
               Object.assign(
                 {
@@ -242,7 +242,7 @@ module.exports = {
           },
           {
             test: /\.css$/,
-            include: /node_modules/,
+            include: [/node_modules/, /\.global\.css$/],
             loader: ExtractTextPlugin.extract(
               Object.assign(
                 {

@@ -41,6 +41,8 @@ module.exports = function(
     build: 'react-scripts build',
     test: 'react-scripts test --env=jsdom',
     eject: 'react-scripts eject',
+    relay: 'react-scripts relay',
+    precommit: "react-scripts prettier",
   };
 
   fs.writeFileSync(

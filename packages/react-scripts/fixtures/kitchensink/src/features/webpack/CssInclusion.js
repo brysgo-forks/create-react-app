@@ -6,6 +6,6 @@
  */
 
 import React from 'react';
-import './assets/style.css';
+import './assets/style.global.css';
 
 export default () => <p id="feature-css-inclusion">We love useless text.</p>;

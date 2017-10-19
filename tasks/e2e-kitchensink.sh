@@ -41,7 +41,7 @@ function handle_exit {
 }
 
 function create_react_app {
-  node "$temp_cli_path"/node_modules/create-react-app/index.js "$@"
+  node "$temp_cli_path"/node_modules/brysgo-create-react-app/index.js "$@"
 }
 
 # Check for the existence of one or more files.

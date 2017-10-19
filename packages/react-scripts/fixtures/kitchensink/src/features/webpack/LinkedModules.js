@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import './assets/style.css';
+import './assets/style.global.css';
 import { test, version } from 'test-integrity';
 
 export default () => {

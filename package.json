@@ -1,4 +1,4 @@
-{
+  {
   "private": true,
   "scripts": {
     "build": "node packages/react-scripts/scripts/build.js",

@@ -1,6 +1,6 @@
 {
   "name": "brysgo-react-error-overlay",
-  "version": "2.0.3",
+  "version": "3.0.0-unpublished",
   "description": "An overlay for displaying stack frames.",
   "main": "lib/index.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "7.2.3",
     "babel-loader": "^7.1.2",
-    "babel-preset-react-app-brysgo": "^3.0.4-2",
+    "babel-preset-react-app-brysgo": "^3.1.0-unpublished",
     "babel-runtime": "6.26.0",
     "chalk": "^2.1.0",
     "chokidar": "^1.7.0",

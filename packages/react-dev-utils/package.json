@@ -1,6 +1,6 @@
 {
   "name": "brysgo-react-dev-utils",
-  "version": "4.2.0-unpublished",
+  "version": "4.2.1-unpublished",
   "description": "Webpack utilities used by Create React App",
   "repository": "brysgo/create-react-app",
   "license": "MIT",

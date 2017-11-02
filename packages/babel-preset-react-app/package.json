@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-react-app-brysgo",
-  "version": "3.1.0",
+  "version": "3.1.0-0",
   "description": "Babel preset used by Create React App",
   "repository": "brysgo/create-react-app",
   "license": "MIT",

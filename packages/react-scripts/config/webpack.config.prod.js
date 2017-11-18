@@ -199,7 +199,7 @@ module.exports = {
           ...['modules', 'global'].map(cssType => ({
             test: /\.css$/,
             [cssType === 'modules' ? 'exclude' : 'include']: [
-              /node_modules/,
+              /(?=(^.+?node_modules[^.]+))\1(?!\.module\.css)/,
               /\.global\.css$/,
             ],
             loader: ExtractTextPlugin.extract(

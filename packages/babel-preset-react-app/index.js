@@ -86,6 +86,7 @@ if (env === 'test') {
     plugins: plugins.concat([
       // Compiles import() to a deferred require()
       require.resolve('babel-plugin-dynamic-import-node'),
+      require.resolve('babel-plugin-relay'),
     ]),
   };
 } else {

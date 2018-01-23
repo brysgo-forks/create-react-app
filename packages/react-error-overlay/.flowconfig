@@ -1,10 +1,15 @@
-[ignore]
-.*/node_modules/eslint-plugin-jsx-a11y/.*
-.*/node_modules/graphql/.*
-
 [include]
-src/**/*.js
+<PROJECT_ROOT>/src/**/*.js
+
+[ignore]
+.*/node_modules/.*
+.*/.git/.*
+.*/__test__/.*
+.*/fixtures/.*
 
 [libs]
+flow/
 
 [options]
+module.file_ext=.js
+sharedmemory.hash_table_pow=19

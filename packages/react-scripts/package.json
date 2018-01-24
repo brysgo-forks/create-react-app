@@ -36,7 +36,6 @@
     "css-loader": "0.28.7",
     "dotenv": "4.0.0",
     "dotenv-expand": "4.0.1",
-    "emotion": "^8.0.12",
     "eslint": "4.10.0",
     "eslint-config-react-app-brysgo": "^2.1.0-0",
     "eslint-loader": "1.9.0",

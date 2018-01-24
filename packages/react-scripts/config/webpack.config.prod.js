@@ -178,7 +178,6 @@ module.exports = {
               presets: [require.resolve('babel-preset-react-app-brysgo')],
               plugins: [
                 require.resolve('babel-plugin-relay'),
-                require.resolve('emotion/babel'),
               ],
               // @remove-on-eject-end
               compact: true,

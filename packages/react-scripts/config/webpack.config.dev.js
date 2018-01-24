@@ -171,7 +171,6 @@ module.exports = {
               presets: [require.resolve('babel-preset-react-app-brysgo')],
               plugins: [
                 require.resolve('babel-plugin-relay'),
-                require.resolve('emotion/babel'),
               ],
               // @remove-on-eject-end
               // This is a feature of `babel-loader` for webpack (not Babel itself).

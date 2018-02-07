@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-app-brysgo",
-  "version": "2.1.0-0",
+  "version": "2.1.0-1",
   "description": "ESLint configuration used by Create React App",
   "repository": "brysgo/create-react-app",
   "license": "MIT",

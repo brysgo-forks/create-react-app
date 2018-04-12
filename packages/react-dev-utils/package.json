@@ -1,6 +1,6 @@
 {
-  "name": "brysgo-react-dev-utils",
-  "version": "5.0.0-2",
+  "name": "react-dev-utils",
+  "version": "5.0.0->1",
   "description": "Webpack utilities used by Create React App",
   "repository": "brysgo/create-react-app",
   "license": "MIT",
@@ -41,7 +41,7 @@
     "brysgo-react-error-overlay": "^4.0.0-2",
     "chalk": "1.1.3",
     "cross-spawn": "5.1.0",
-    "detect-port-alt": "1.1.5",
+    "detect-port-alt": "1.1.6",
     "escape-string-regexp": "1.0.5",
     "filesize": "3.5.11",
     "global-modules": "1.0.0",

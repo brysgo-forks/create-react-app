@@ -1,0 +1,15 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/babel-preset-react-app/package.json",
+        "packages/create-react-app/package.json",
+        "packages/eslint-config-react-app/package.json",
+        "packages/react-dev-utils/package.json",
+        "packages/react-error-overlay/package.json",
+        "packages/react-scripts/package.json"
+      ]
+    }
+  }
+}
